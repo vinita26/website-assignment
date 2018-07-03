@@ -3,55 +3,70 @@
 <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/960.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mahi Creations</title>
 </head>
 
 <body>
-  <header id="main-header">Mahi Creations</header>
-  <nav class="top">
-    <ul>
-      <li><a href=#>Home</a></li>
-      <li><a href=aboutUs.html />About</a></li>
-      <li><a href=Contact.html />Contact Us</a></li>
-      <li><a href=# />Shipping & Returns</a></li>
-      <li><a href=# />Cart</a></li>
-    </ul>
-  </nav>
+  <header class="main-header">
+    <div id="nav-bar">
+        <div class="nav-left">
+          <div id="nav-logo">
+            <img src="../img/site-logo.png" alt="logo"/>
+          </div>
+        </div>
+        <div class="nav-mid">
+          <input type="text" name="search-box"  />
+          <button type="submit" name="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href=#>Home</a></li>
+            <li><a href="/Contact.html" />Contact Us</a></li>
+            <li><a href=# />Shipping & Returns</a></li>
+            <li><a href=# /><i class="fas fa-cart-plus"></i></a></li>
+          </ul>
+        </div>
+    </div>
+  </header>
+
 
   <section class="hero">
-    <header id="header">
-      <img src="../img/logo.png" alt="logo" height="30px" width="30px" />
-    </header>
-    <header class="hero-header">
+        <header class="hero-header">
       <h2 class="hero-title">Get your Customised jwelleries at your home</h1>
-  </header>
+    </header>
   </section>
 
-  <div class="three-column-section">
-    <div class="first-column">
-      <h2>Customised as per your need</h2>
+  <div id="container1" class="container_12" >
+    <div class="grid_12">
+    </div>
+
+    <div class="grid_4">
+      <h2><b>Customised as per your need</b></h2>
+      <img src="../img/product2.jpg" alt="customixed jwellery" width="300px" height="200px">
       <p>You select the design and we will cutomize the colors and size for your specific order</p>
-      <img src="../img/product2.jpg" alt="customixed jwellery" width="300px" height="200px"/>
+      </img>
     </div>
-
-    <div class="second-column">
+    <div class="grid_4">
       <h2>Affordable prices</h2>
+      <img src="../img/price.jpg" alt="price" width="300px" height="200px">
       <p>You couldn't find such a great jwellery at our price.</p>
-      <img src="../img/price.jpg" alt="price" width="300px" height="200px"/>
+      </img>
     </div>
-
-
-    <div class="third-column">
+    <div class="grid_4">
       <h2>Get it home Delivered</h2>
-      <p>We will deliver your favourite jwellery to your or your loved on'e doorstep.</p>
-      <img src="../img/delivery.png" alt="delivery" width="300px" height="200px"/>
+      <img src="../img/delivery.png" alt="delivery" width="300px" height="200px">
+      <p>We will deliver your favourite jwellery to your or your loved one's doorstep.</p>
+      </img>
     </div>
-</div>
+  </div>
 
-  <div class="container_12">
+  <div id="container2" class="container_12">
     <div class="grid_12">
       <h2>All products:</h2>
     </div>
@@ -76,7 +91,7 @@
     </div>
 
 
-    <div class="grid_4">
+    <div id="container3" class="grid_4">
       <img src="../img/product4.jpg" alt="blackEarings" width="150px" height="150px"><br>
         <span id="product-name">Multicolor set</span>
         <p><b>Price: 900</p>
