@@ -1,16 +1,16 @@
-header{
-  font-size: 60px;
-  color: blue;
-  padding-bottom: 10px;
+#main-header {
   height: 10vh;
+  font-size: 60px;
+  font-family: 'Galada', cursive;
+  color: blue;
+  background-color: #99DDC8;
 }
 body{
   font-family: sans-serif;
 
 }
-.top{
-
-  background-color: lightgreen;
+top {
+  height: 5vh;
 }
 li{
   display: inline-block;
@@ -26,58 +26,52 @@ ul a:hover{
   font-size: 20px;
 }
 .hero {
-  height: 30vh;
-  width: 30vw;
-  background-image: url("../img/product5.jpg");
+  display: flex;
+  height: 50vh;
+  width: 50vh;
+  justify-content: center;
+  background-image: url("../img/product6.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+#header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: left;
 }
-.categories{
-  font-size: 20px;
-  background-color: lightgreen;
-  text-align-last: center;
-  text-decoration: none;
+.hero header{
+  font-family: 'Galada', cursive;
+  color: blue;
 }
-
-.two-column-section{
+.three-column-section{
   display: flex;
   justify-content: space-around;
 
   }
-.two-column-section first-column{
-  height: 40vh;
-  width: 50%;
+.three-column-section first-column{
+  height: 30vh;
+  width: 30%;
 
 }
-.two-column-section second-column{
-  height: 40vh;
-  width: 50%;
-  background-color: #556F44;
+.three-column-section second-column{
+  height: 30vh;
+  width: 40%;
+}
+.three-column-section third-column{
+  height: 30vh;
+  width: 30%;
 }
 
-.product-row1{
+footer {
   display: flex;
-  flex-direction: row;
+  height: 5vh;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
 }
-{
-
-}
-aside {
-  height: 70vh;
-  width: 20%;
-  background-color: #659B5E;
-}
-
-main {
-  height: 70vh;
-  width: 60%;
-  background-color: #556F44;
-}
-
-section {
-  height: 70vh;
-  width: 20%;
-  background-color: #283F3B;
+footer i{
+  
+  color: white;
+  align-items: center;
 }
