@@ -1,7 +1,5 @@
 .main-header {
   height: 5vh;
-  color: blue;
-  background-color: black;
   position: fixed;
   top: 0%;
   width: 100%;
@@ -11,6 +9,7 @@
   width: auto;
 }
 #nav-bar{
+  background-color: black;
   display: flex;
   justify-content: space-around;
 }
@@ -42,16 +41,15 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
-.hero #header {
+/* .hero hero-header {
   display: flex;
   justify-content: flex-start;
   align-items: left;
-}
+} */
 .hero header{
   font-family: 'Galada', cursive;
   color: white;
-  font-size: 50px;
-  align-self: center;
+  align-self: auto;
 }
 .three-column-section{
   display: flex;
@@ -90,15 +88,17 @@ h2 {
 }
 footer {
   display: flex;
+  flex-direction: row;
   height: 5vh;
   background-color: black;
-  align-items: center;
   justify-content: center;
-}
-footer i{
-  margin: 5px 10px;
-  color: white;
   align-items: center;
+}
+footer span a{
+  color: white;
+  width: auto;
+  height: auto;
+  padding-right: 10px;
 }
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -106,6 +106,25 @@ footer i{
     flex-direction: column;
     display: inline-flex;
   }
+    .three-column-section{
+      flex-direction: column;
+      align-items: center;
+    }
+    #all-products{
+      flex-direction: column;
+    }
+}
+
+/* On screens that are 320px wide or less, make the nav bar menu links as a list and hide the search bar */
+@media screen and (max-width: 320px) {
+    #nav-bar {
+    flex-direction: column;
+    display: inline-flex;
+    height: auto;
+    }
+    #nav-bar .nav-mid{
+    display: none;
+    }
     .three-column-section{
       flex-direction: column;
     }
