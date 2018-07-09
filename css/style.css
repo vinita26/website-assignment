@@ -2,6 +2,9 @@
   height: 5vh;
   color: blue;
   background-color: black;
+  position: fixed;
+  top: 0%;
+  width: 100%;
 }
 #nav-bar{
   display: flex;
@@ -72,4 +75,11 @@ footer i{
 
   color: white;
   align-items: center;
+}
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .nav-right {
+        float: none;
+        width: 100%;
+    }
 }
