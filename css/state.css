@@ -1,0 +1,130 @@
+
+/* On screens that are 320px wide or less, make the nav bar menu links as a list and hide the search bar */
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  section.hero {
+    margin-top: 155px;
+    width: 100%;
+  }
+  #nav-bar .nav-right ul li a {
+    font-size: 20px;
+  }
+
+  #nav-bar .nav-right ul li {
+    padding: 5px;
+  }
+  .nav-left {
+    background-color: #5DBCD2;
+  }
+  #nav-bar {
+    flex-direction: column;
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+  }
+
+  .nav-right ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .three-column-section img{
+    padding-top: 10px;
+    width: 150px;
+    height: 150px;
+  }
+  #nav-bar .nav-mid{
+    display: none;
+  }
+  .hero header{
+  align-self: center;
+  font-size: 15px;
+  }
+  .three-column-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  #all-products img{
+    width:100px;
+    height:100px;
+  }
+
+  #product-heading {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: yellow;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 960px) {
+  #nav-bar{
+    flex-direction: column;
+  }
+
+  #nav-bar .nav-right ul {
+    flex-direction: row;
+  }
+
+  #nav-bar .nav-mid {
+    display: block;
+  }
+  #top-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  .nav-mid{
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+  .nav-right ul li{
+    padding-right: 15px;
+  }
+  section.hero {
+    margin-top: 75px;
+  }
+  .hero header{
+  align-self: center;
+  font-size: 30px;
+  }
+  .three-column-section{
+    background-color: lightgreen;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+  .three-column-section img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .products {
+    width: 240px;
+  }
+  #all-products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #all-products .products img{
+    width:200px;
+    height:200px;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width:1080){
+  #nav-bar{
+    display: flex;
+  }
+  #nav-bar #top-nav{
+    display: flex;
+    flex-direction: row;
+  }
+}

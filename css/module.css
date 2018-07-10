@@ -1,0 +1,89 @@
+.main-header {
+  height: 5vh;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+#nav-logo img{
+  width: auto;
+}
+#nav-bar{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-right ul li{
+  display: inline;
+  color: white;
+}
+.nav-right ul li a{
+  text-decoration: none;
+  color: white;
+  margin: 0 0 3px 0;
+
+}
+.nav-right ul a:hover{
+  text-decoration: underline;
+  font-size: 30px;
+}
+.hero {
+  display: flex;
+  height: 40vh;
+  width: 100%;
+  margin-top: 60px;
+  justify-content: center;
+  background-image: url("../img/prod11.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero header{
+  font-family: 'Galada', cursive;
+  color: white;
+  align-self: center;
+  font-size: 45px;
+}
+.three-column-section{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+  background-color: lightgreen;
+}
+
+.three-column-section {
+  width: 100%;
+}
+.three-column-section img{
+  padding-top: 10px;
+  width: 250px;
+  height: 250px;
+}
+
+#all-products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: space-between;
+  background-color: pink;
+}
+.products{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#all-products .products img{
+  width:350px;
+  height:350px;
+}
+
+#product-name, .products p {
+  font-weight: bold;
+}
+footer span a{
+  color: white;
+  width: auto;
+  height: auto;
+  padding-right: 10px;
+}
