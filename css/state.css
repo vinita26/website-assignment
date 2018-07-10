@@ -119,12 +119,23 @@
   }
 }
 
-@media screen and (min-width: 960px) and (max-width:1080){
-  #nav-bar{
-    display: flex;
-  }
+@media screen and (min-width: 960px) and (max-width:1200px){
   #nav-bar #top-nav{
     display: flex;
     flex-direction: row;
+    align-items: center;
+  }
+  #nav-bar{
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-mid{
+    padding-left: 90px;
+  }
+  .nav-right{
+    padding-top: 10px;
+  }
+  section.hero {
+    margin-top: 35px;
   }
 }
